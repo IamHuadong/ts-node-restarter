@@ -25,5 +25,8 @@
   "homepage": "https://github.com/IamHuadong/ts-node-restarter#readme",
   "dependencies": {
     "@types/node": "^16.11.7"
+  },
+  "bin": {
+    "ts-node-restarter": "./dist/ts-node-restarter.js"
   }
 }
