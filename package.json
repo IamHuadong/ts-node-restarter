@@ -1,0 +1,29 @@
+{
+  "name": "ts-node-restarter",
+  "version": "1.0.0",
+  "description": "A cli tool for restarting your node.js server when files change",
+  "main": "./dist/ts-node-restarter.js",
+  "types": "./dist/ts-node-restarter.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IamHuadong/ts-node-restarter.git"
+  },
+  "keywords": [
+    "typescript",
+    "node.js",
+    "restarter"
+  ],
+  "author": "huadong.chen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/IamHuadong/ts-node-restarter/issues"
+  },
+  "homepage": "https://github.com/IamHuadong/ts-node-restarter#readme",
+  "dependencies": {
+    "@types/node": "^16.11.7"
+  }
+}
