@@ -1,6 +1,6 @@
 {
   "name": "ts-node-restarter",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A cli tool for restarting your node.js server when files change",
   "main": "./dist/ts-node-restarter.js",
   "types": "./dist/ts-node-restarter.d.ts",
@@ -28,5 +28,6 @@
   },
   "bin": {
     "ts-node-restarter": "./dist/ts-node-restarter.js"
-  }
+  },
+  "watch": ["src"]
 }
