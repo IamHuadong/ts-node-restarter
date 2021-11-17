@@ -28,5 +28,6 @@
   },
   "bin": {
     "ts-node-restarter": "./dist/ts-node-restarter.js"
-  }
+  },
+  "watch": ["src"]
 }
