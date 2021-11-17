@@ -9,7 +9,7 @@ import childProcessModule from 'child_process'
 type ParseTargetFile = () => string
 
 const parsePath = (pathName: string) => {
-  return path.resolve(__dirname, '..', pathName)
+  return path.join(process.cwd(), pathName)
 }
 
 const parseTargetScriptPath: ParseTargetFile = () => {
@@ -48,7 +48,7 @@ const main = () => {
 
   const watchers: fs.FSWatcher[] = []
 
-  watchFiles.array.forEach((path: string) => {
+  watchFiles.forEach((path: string) => {
     const isFile = /\.(ts|js)$/.test(path)
     const absolutePath = parsePath(path)
     if (isFile) {
@@ -67,7 +67,7 @@ const main = () => {
     // exist target process
     targetProcess.kill()
     // unwatch files
-    watchFiles.array.forEach((path: string) => {
+    watchFiles.forEach((path: string) => {
       const isFile = /\.(ts|js)$/.test(path)
       const absolutePath = parsePath(path)
       if (isFile) {
